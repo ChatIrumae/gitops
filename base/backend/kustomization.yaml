@@ -4,6 +4,6 @@ resources:
   - namespace-backend.yaml
 images:
   - name: beming/chat-irumae-backend
-    newTag: ef103b2ea848835504b3f91d138a822e9ec4be4d
+    newTag: 30af11d8c1fcacd72e15619580c1ac8e84d207ad
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
