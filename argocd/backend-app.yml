@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/beming-dev/stock-simulator-cicd.git
+    repoURL: https://github.com/ChatIrumae/chat-irumae.git
     path: overlays/production/backend
     targetRevision: main
   destination:
