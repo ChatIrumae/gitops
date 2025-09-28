@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/ChatIrumae/chat-irumae-gitops.git
+    repoURL: https://github.com/ChatIrumae/gitops.git
     path: overlays/production/frontend
     targetRevision: main
   destination:
