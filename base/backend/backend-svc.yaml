@@ -3,10 +3,10 @@ kind: Service
 metadata:
   name: spring-backend-service
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: spring-backend
   ports:
-    - name: http
-      port: 80
+    - protocol: TCP
+      port: 3001
       targetPort: 3001
