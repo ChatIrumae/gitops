@@ -3,11 +3,10 @@ kind: Service
 metadata:
   name: spring-backend-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
-    app: spring-backend # ← 이 부분이 있어야 합니다
+    app: spring-backend
   ports:
     - name: http
-      port: 3001
+      port: 80
       targetPort: 3001
-      nodePort: 30081
