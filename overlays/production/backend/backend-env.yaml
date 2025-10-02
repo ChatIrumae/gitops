@@ -17,6 +17,18 @@ spec:
               value: production
             - name: JAVA_OPTS
               value: "-Xms512m -Xmx1g"
+            # 비민감한 환경변수들
+            - name: BACK_BASE_URL
+              value: "https://api.yourdomain.com"
+            - name: FRONT_BASE_URL
+              value: "https://yourdomain.com"
+            - name: SERVER_PORT
+              value: "3001"
+            - name: LOGGING_LEVEL_ROOT
+              value: "INFO"
+            # 민감한 환경변수들 (실제 값으로 교체 필요)
+            - name: GOOGLE_ID
+              value: "your-google-client-id"
           # 2) 리소스 요청(requests) / 제한(limits)
           resources:
             requests:

@@ -2,6 +2,8 @@ resources:
   - backend-deploy.yaml
   - backend-svc.yaml
   - namespace-backend.yaml
+  - configmap-backend-env.yaml
+  - secret-backend-env.yaml
 images:
   - name: beming/chat-irumae-backend
     newTag: 4153b239962f01798c5202851aaf984a75c3a828
