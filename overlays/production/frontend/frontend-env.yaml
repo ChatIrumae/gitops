@@ -27,6 +27,9 @@ spec:
               value: production
             - name: JAVA_OPTS
               value: "-Xms512m -Xmx1g"
+            # Vite 환경변수들 (VITE_ 접두사 필요)
+            - name: VITE_API_BASE_URL
+              value: "http://chat-irumae-back.kro.kr"
           # 2) 리소스 요청(requests) / 제한(limits)
           resources:
             requests:

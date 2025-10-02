@@ -2,6 +2,8 @@ resources:
   - frontend-deploy.yaml
   - frontend-svc.yaml
   - namespace-frontend.yaml
+  - configmap-frontend-env.yaml
+  - secret-frontend-env.yaml
 images:
   - name: beming/chat-irumae-frontend
     newTag: c1c15681ceb8ee361bb327e238419635e787d338
