@@ -20,13 +20,8 @@ spec:
           image: beming/chat-irumae-backend:placeholder-backend
           # ConfigMap에서 환경변수 가져오기
           envFrom:
-            - configMapRef:
-              name: backend-config
             - secretRef:
               name: backend-secret
-          env:
-            - name: SPRING_PROFILES_ACTIVE
-              value: "prod"
           ports:
             - containerPort: 3001
               name: http
