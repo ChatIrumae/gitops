@@ -4,4 +4,4 @@ metadata:
   name: backend-config
 data:
   # 여기에 application.properties 내용을 key-value 형태로 넣습니다.
-  OPENAI_API_KEY: "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"
+  OPENAI_API_KEY2: "s"
