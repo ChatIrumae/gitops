@@ -21,7 +21,7 @@ spec:
           # ConfigMap에서 환경변수 가져오기
           envFrom:
             - configMapRef:
-                name: backend-config
+              name: backend-config
             - secretRef:
               name: backend-secret
           env:
